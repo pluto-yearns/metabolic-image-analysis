@@ -1,31 +1,38 @@
 # metabolic-image-analysis
-A python data pipeline for extracting, segmenting, and visualizing raw confocal microscopy autofluorescence data to quantify cellular metabolic states.
+A python data pipeline for extracting, segmenting, and visualising raw confocal microscopy autofluorescence data to quantify cellular metabolic states.
 
 ## Overview
-This project processes raw confocal microscopy images (CZI format) to quantify dynamic changes in cellular metabolism. The dataset is derived from university biophysical research focused on monitoring cell metabolism with NAD(P)H fluorescence lifetime imaging and utilizing redox cofactors as intrinsic probes of metabolic state. By building an automated Python pipeline, I extracted, transformed, and visualized this autofluorescence data to compare NADH levels in cells treated with Glucose (25mM) vs. Galactose (10mM).
+This project processes raw confocal microscopy images (CZI format) to quantify dynamic changes in cellular metabolism. The dataset is derived from university biophysical research focused on monitoring cell metabolism with NAD(P)H fluorescence lifetime imaging and utilising redox cofactors as intrinsic probes of metabolic state. By building a Python pipeline, I extracted, transformed, and visualised this autofluorescence data to compare NADH levels in cells treated with Glucose (25mM) vs. Galactose (10mM).
 
 ## Technical Stack
 * **Languages:** Python
 * **Libraries:** `numpy`, `matplotlib`, `tifffile`, `czifile`
-* **Techniques:** Image Segmentation (Boolean Masking), ETL (Extract, Transform, Load), Time-Series Analysis, Data Visualization.
+* **Techniques:** Image Segmentation (Boolean Masking), ETL (Extract, Transform, Load), Time-Series Analysis, Data Visualisation.
 
 ## Methodology & Pipeline
 1. **Data Extraction & Conversion:** Automated the batch conversion of proprietary `.czi` confocal microscopy files into workable `.tiff` image arrays.
 2. **Image Processing & Segmentation:** Applied boolean segmentation masks (pixel brightness threshold > 256) to isolate cellular regions from background noise across image slices.
-3. **Data Transformation:** Calculated mean fluorescence intensity across 15 timepoints (30-second intervals) and normalized the output to baseline NADH percentages using FCCP and Rotenone reference baselines.
+3. **Data Transformation:** Calculated mean fluorescence intensity across 15 timepoints (30-second intervals) and normalised the output to baseline NADH percentages using FCCP and Rotenone reference baselines.
 
 ## Key Visualizations
 
 ### 1. Fluorescence Intensities Over Time
 *Tracks multivariable cellular response across a 450-second timeline.*
-![Time Series Graph](<img width="569" height="443" alt="Flourescence intensities of sugars" src="https://github.com/user-attachments/assets/ac0a4406-a9e2-4983-838d-0d4fcc9e5b35" />) 
+
+![Time Series Graph](<img width="569" height="443" alt="Flourescence intensities of sugars" src="https://github.com/user-attachments/assets/44bc577d-69c6-4700-ad88-65d1d4b243a5" />
+) 
 
 ### 2. Mean NADH Percentage Analysis
 *Statistical comparison of metabolic output highlighting standard deviation across samples.*
-![Bar Chart](<img width="524" height="428" alt="Mean baseline NADH percentage" src="https://github.com/user-attachments/assets/c633fd8a-9e0e-49d1-8a41-81ef7dac2752" />)
+
+![Bar Chart](<img width="524" height="428" alt="Mean baseline NADH percentage" src="https://github.com/user-attachments/assets/c10aed55-f844-41a2-ba9e-53f3a5fd88d4" />
+)
 
 ### 3. Raw Confocal Processing
 *Demonstration of the raw array data and segmentation at the 30s timepoint for comparison between Galactose and Glucose A.*
-![Raw output vs Boolean masks]
-(<img width="828" height="458" alt="Glucose A (30s)" src="https://github.com/user-attachments/assets/982fe5b0-bac1-4d3c-80cc-6342caed85b5" /> 
-<img width="828" height="458" alt="Galactose A (30s)" src="https://github.com/user-attachments/assets/b46b12c3-c3a7-4ac5-bf9a-51a0466cf2f7" />)
+
+![Baseline Glucose A](<img width="828" height="458" alt="Glucose A (30s)" src="https://github.com/user-attachments/assets/058477d4-5247-47f4-a82f-5b6b962b84d5" />
+)
+
+![Baseline Galactose A](<img width="828" height="458" alt="Galactose A (30s)" src="https://github.com/user-attachments/assets/2860f156-ccc3-4492-b5c2-e6a72dea9924" />
+)
