@@ -19,20 +19,17 @@ This project processes raw confocal microscopy images (CZI format) to quantify d
 ### 1. Fluorescence Intensities Over Time
 *Tracks multivariable cellular response across a 450-second timeline.*
 
-![Time Series Graph](<img width="569" height="443" alt="Flourescence intensities of sugars" src="https://github.com/user-attachments/assets/44bc577d-69c6-4700-ad88-65d1d4b243a5" />
-) 
+!<img width="569" height="443" alt="Flourescence intensities of sugars" src="https://github.com/user-attachments/assets/44bc577d-69c6-4700-ad88-65d1d4b243a5" />
 
 ### 2. Mean NADH Percentage Analysis
 *Statistical comparison of metabolic output highlighting standard deviation across samples.*
 
-![Bar Chart](<img width="524" height="428" alt="Mean baseline NADH percentage" src="https://github.com/user-attachments/assets/c10aed55-f844-41a2-ba9e-53f3a5fd88d4" />
-)
+!<img width="524" height="428" alt="Mean baseline NADH percentage" src="https://github.com/user-attachments/assets/c10aed55-f844-41a2-ba9e-53f3a5fd88d4" />
 
 ### 3. Raw Confocal Processing
 *Demonstration of the raw array data and segmentation at the 30s timepoint for comparison between Galactose and Glucose A.*
 
-![Baseline Glucose A](<img width="828" height="458" alt="Glucose A (30s)" src="https://github.com/user-attachments/assets/058477d4-5247-47f4-a82f-5b6b962b84d5" />
-)
+!<img width="828" height="458" alt="Glucose A (30s)" src="https://github.com/user-attachments/assets/058477d4-5247-47f4-a82f-5b6b962b84d5" />
 
-![Baseline Galactose A](<img width="828" height="458" alt="Galactose A (30s)" src="https://github.com/user-attachments/assets/2860f156-ccc3-4492-b5c2-e6a72dea9924" />
-)
+!<img width="828" height="458" alt="Galactose A (30s)" src="https://github.com/user-attachments/assets/2860f156-ccc3-4492-b5c2-e6a72dea9924" />
+
